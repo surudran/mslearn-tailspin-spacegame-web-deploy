@@ -118,9 +118,9 @@ namespace UITests
             {
                 // Click the close button that's part of the modal.
                 ClickElement(FindElement(By.ClassName("close"), modal));
-                
+
                 // Wait for the modal to close and for the main page to again be clickable.
-                FindElement(By.TagName("body"));
+                IWebElement webElement = FindElement(By.TagName("body"));
             }
 
             // Assert that the modal was displayed successfully.
